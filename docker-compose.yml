@@ -8,7 +8,8 @@ services:
     ports: 
       - "80:8080" #port untuk host 80 dan untuk container 8080
     depends_on:
-      - item-db  #itemapp terhubung dengan container item-db    
+      - item-db  #itemapp terhubung dengan container item-db 
+    restart: always     
 
   item-db:
     image: mongo:3 #mengunakan image mongo ver 3

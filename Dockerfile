@@ -4,7 +4,7 @@ FROM node:14-alpine
 WORKDIR /app
 #menyalin seluruh source code ke working directory
 COPY . .
-#aplikasi berjalan pada production mode dan mengunakan container bernama item-db
+#aplikasi berjalan pada production mode dan mengunakan container(database) bernama item-db
 ENV NODE_ENV=production DB_HOST=item-db
 #menginstall depedencies production dan build aplikasi
 RUN npm install --production --unsafe-perm && npm run build

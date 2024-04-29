@@ -8,6 +8,6 @@ docker images
 docker tag item-app:v1 ilhamatsaris/item-app:v1
 #login ke Docker hub
 #cat ./my_password.txt | docker login --username ilhamatsaris --password-stdin
-echo $PASSWORD_DOCKER_HUB | docker login -u fikrihelmi17 --password-stdin
+echo $PASSWORD_DOCKER_HUB | docker login -u ilhamatsaris --password-stdin
 #upload image ke docker hub
 docker push ilhamatsaris/item-app:v1
